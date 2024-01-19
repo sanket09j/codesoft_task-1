@@ -1,0 +1,312 @@
+
+:root{
+    --primary-color: #000000;
+    --secondary-color: #1b1d1a;
+    --text-light:white;
+    --extra-light: #f3f4f6;
+
+}
+*{
+    
+    box-sizing:border-box;
+}
+
+img{
+    width: 100%;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: var(min--primary-color);
+}
+header{
+    display: flex;
+    min-height: 100vh;
+}
+.container-right{
+    background-image: url('tech2.jpg');
+    background-color: var(--secondary-color);
+    justify-content: flex-end;
+}
+.container-left,
+.container-right{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+
+.nav-logo{
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    top:0;
+    width: 100%;
+    max-width: 600px;
+    padding: 2rem;
+    margin-right: 170px;
+    font-size:80px;
+    font-style: italic;
+    font-weight: 600;
+    color: white
+}
+.content{
+    font-family: Cursive;
+    font-style: italic;
+    margin-right: 170px;
+    max-width: 600px;
+    padding:2rem;
+    padding-top: 5rem;
+    flex: 1;
+    color: white;
+    display: grid;
+    gap:2rem;
+}
+
+.title{
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 4rem;
+
+}
+
+.subtitle{
+    
+    font-weight: 600px;
+}
+.description{
+    font-size: 25px;
+    max-width: 500px;
+}
+.action_btns{
+    display: flex;
+    align-items: center;
+    gap:1rem;
+}
+.btn{
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    background-color: transparent;
+    outline: none;
+    border:none;
+    border-radius: 5rem;
+    cursor: pointer;
+}
+.portfolio{
+    background-color: var(--extra-light);
+
+}
+.portfolio:hover{
+    background-color: burlywood;
+
+}
+
+.nav_links{
+      position: absolute;
+      top:0;
+      width: 100%;
+      padding:2rem;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content:space-evenly;
+      z-index: 1;
+      color: white;
+      font-size: 20px;
+
+}
+
+.link {
+    padding:0 0.5rem;
+    color: var(--text-light);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.link:hover {
+    color: yellow;
+}
+
+.image{
+    position: absolute;
+    place-content: center;
+    position: relative;
+    border: 10px solid white;
+    margin-right: 200px;
+    
+}
+.image:hover{
+    border-color: chartreuse;
+}
+.image img {
+    max-width: 400px;
+    
+}
+
+.image_content {
+    color: var(--extra-light);
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap:1rem;
+}
+
+.image_content h3{
+          background-color: var(--extra-light);
+          color: var(--primary-color);
+          padding: 0.5rem;
+          border-radius: 5px;
+}
+
+.image_content p {
+            font-size: 0.9rem;
+            font-weight: 600;
+}
+
+@media (width < 900px){
+    header{
+        flex-direction: column-reverse;
+    }
+    .container-left,
+    .container-right {
+        justify-content: center;
+    }
+    .content {
+        text-align: center;
+    }
+    .action_btns {
+        justify-content: center;
+    }
+}
+.demo{
+    background-image: url('tech2.jpg');
+    
+}
+.container-left{
+    background-image: url('tech2.jpg');
+    background-color: var(--secondary-color);
+    justify-content: flex-end;
+}
+.hs{
+    height:100px;
+    color: black;
+    display: flex;
+    font-size: xx-large;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.profile{
+    height: 350px;
+    width: 300px;
+    border-radius: 50%;
+    border:3px solid black;
+    float: right;
+    margin-bottom: 100px;
+    margin-right: 15px;
+}
+.intro{
+    color: whitesmoke;
+    margin-top: 30px;
+    height: 250px;
+    width: 100%;
+    font-size: 25px;
+}
+.skills{
+    color: black;
+    background-color:darkgray;
+    font-size:50px;
+    width: 410px;
+    
+}
+.skills:hover{
+    background-color: white;
+    color: black;
+}
+.skills1{
+    color:whitesmoke;
+    font-size: 23px;
+}
+.skills11{
+    color: black;
+    background-color:darkgray;
+    font-size:50px;
+    width: 500px;
+    
+}
+.skills11:hover{
+    background-color: white;
+    color: black;
+}
+.project-title{
+    color: black;
+    background-color: orange;
+    font-size: 26px;
+
+}
+.project-intro{
+    color: whitesmoke;
+    font-size: 30px;
+    margin-left: 100px;
+}
+
+.box{
+    border:10px solid black;
+    height: 200px;
+    width: 23%;
+    text-align: center;
+    background-color:white;
+    padding:20px 0px 15px;
+    margin-top: 15px;
+    display:inline-block;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-size: cover;
+}
+.box:hover{
+    border-color: chartreuse;
+}
+.box-img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+   .basic-info{
+    font-size: 28px;
+    color: whitesmoke;
+
+   }
+   .download-btn{
+    border: 2px solid black;
+   }
+   .download-btn{
+    background-color: black;
+    color: white;
+    padding:1rem 2rem;
+    border-radius: 5px;
+    width: 10px;
+    border: 2px solid white;
+   }
+   .down{
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+   }.download-btn:hover{
+    color: white;
+    background-color:aqua;
+   }
+   .tech{
+    background-image: url('tech2.jpg');
+    background-size: cover;
+   }
+   .footer1{
+    color:white;
+    background-color: black;
+    text-align: center;
+    align-items: center;
+   }
+   .bodyt1{
+    margin-left: 20px;
+   }
